@@ -1,6 +1,7 @@
 
 $textcolor1: #58402C; // marrone
 $signupcolor: #30488F; //blu
+$linkColor: #263972; // lighter blue
 
 $sectionBack: #FFE7D2; // rosa
 
@@ -8,6 +9,11 @@ $totalwidth: 100%;
 $imageWidth1: 140px;
 
 $iconHight: 18px;
+
+$sectionPadding: 80px;
+
+$pSize1: 22px;
+
 
 @mixin flexcenter{
 

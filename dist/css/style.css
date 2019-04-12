@@ -197,3 +197,49 @@ section.comparing .container hr {
   margin: 100px 0;
 }
 
+section.features-list {
+  padding-top: 80px;
+}
+
+section.features-list .container .row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+section.features-list .container .row .image img {
+  max-width: 768px;
+  height: auto;
+}
+
+section.features-list .container .row .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.features-list .container .row .desc h2 {
+  font-weight: 600;
+}
+
+section.features-list .container .row .desc p {
+  font-size: 22px;
+}
+
+section.features-list .container .row .desc a {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #263972;
+}
+
+section.features-list .container .row .desc a .fas {
+  margin-left: 5px;
+  color: #263972;
+}
+
+section.features-list .container .row .desc img {
+  max-width: 270px;
+  align-self: center;
+}
+

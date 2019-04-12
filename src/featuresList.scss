@@ -1,0 +1,60 @@
+
+
+section.features-list{
+
+  padding-top: $sectionPadding;
+
+
+  .container{
+
+  .row{
+
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+
+      .image{
+
+
+        img{
+
+          max-width: 768px;
+          height: auto;
+        }
+      }
+
+      .desc{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2{
+          font-weight: 600;
+        }
+
+        p{
+          font-size: $pSize1;
+        }
+
+        a{
+
+          @include flexcenter;
+          font-size: $pSize1;
+          color: $linkColor;
+
+          .fas{
+            margin-left: 5px;
+            color: $linkColor;
+          }
+        }
+
+        img{
+
+          max-width: 270px;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
