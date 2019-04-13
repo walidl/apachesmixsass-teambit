@@ -43,11 +43,6 @@ section.hero{
 
         @include signupButtons;
 
-        img{
-
-          height: $iconHight;
-          margin-right: 5px;
-        }
       }
 
       span{

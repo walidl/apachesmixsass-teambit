@@ -1,0 +1,99 @@
+
+
+section.get-started{
+
+  padding: $sectionPadding 0;
+  background-color: #FFE7D2;
+
+  .container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+      font-size: 40px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+    .text{
+
+      width: 628px;
+      background-color: white;
+      padding: 20px 30px;
+      border: 1px solid #BDB5AF;
+      border-radius: 5px;
+      position: relative;
+      margin-bottom: 40px;
+
+
+      p{
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 1.5rem;
+      }
+
+      > img{
+
+        width: 37px;
+        height: 39px;
+        position: absolute;
+        top: -23px;
+        left: -1px;
+      }
+
+      .founders{
+
+        display: flex;
+        .images{
+
+          img{
+
+            width: 40px;
+            margin-right: 15px;
+          }
+
+        }
+
+        a{
+          font-size: 14px;
+          color: $linkColor;
+        }
+      }
+    }
+
+    .sign-up{
+
+      @include flexcenter;
+      margin-bottom: 20px;
+
+      .button{
+
+        @include signupButtons
+      }
+
+      span{
+
+        opacity: 0.5;
+      }
+
+    }
+
+    a{
+
+      font-size: 14px;
+      transition: color 0.3s ease;
+
+      &:hover{
+
+        color: #30488f;
+
+        .fas{
+          color: #30488f;
+        }
+      }
+    }
+
+  }
+}

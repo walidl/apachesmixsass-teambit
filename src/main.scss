@@ -15,8 +15,15 @@
 
     background-color: darken( $signupcolor, 20%)
   }
+
+  img{
+
+    height: $iconHight;
+    margin-right: 5px;
+  }
 }
 
 @import "hero";
 @import "comparing";
 @import "featuresList";
+@import "getStarted";

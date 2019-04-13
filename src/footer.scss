@@ -1,0 +1,67 @@
+
+
+footer{
+
+  padding-top: $sectionPadding;
+  padding-bottom: 50px;
+
+  .container{
+
+    display: flex;
+
+    .left{
+
+      @include flexcenter;
+      width: 370px;
+
+      img{
+
+        width: 50px;
+        margin-right: 20px;
+      }
+
+      p{
+
+        width: 300px;
+        font-size: 18px;
+        font-weight: 600;
+
+        a{
+
+          color: $linkColor;
+        }
+      }
+    }
+
+    .right{
+
+      display: flex;
+      justify-content: space-around;
+      width: calc( 100% - 370px);
+
+      ul{
+
+        h3{
+
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        li{
+
+          margin-bottom: 10px;
+
+          a{
+
+            font-size: 14px;
+            transition: color 0.3s ease;
+
+            &:hover{
+
+              color: $linkColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
