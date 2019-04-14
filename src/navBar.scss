@@ -20,7 +20,9 @@ nav{
 
   ul{
 
-    display: flex;
+    height: 100%;
+    @include flexcenter;
+
     font-weight: 600;
 
     li{
@@ -31,6 +33,39 @@ nav{
 
       img{
         height: $iconHight;
+      }
+    }
+
+    li.dropdown{
+
+      height: 100%;
+      position: relative;
+
+      .menu{
+
+        display: none;
+        width: 105px;
+        height: auto;
+        position: absolute;
+        top:75%;
+        box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+        border: 1px solid #e1ddd4;
+        border-radius: 7px;
+        background-color: white;
+
+        li{
+
+          padding: 5px 10px;
+          margin: 5px 0;
+          font-weight: 600;
+          font-size: 13px;
+          transition: color 0.3s ease;
+
+          &:hover{
+
+            color: $linkColor;
+          }
+        }
       }
     }
 
@@ -53,7 +88,26 @@ nav{
       }
     }
   }
+}
 
 
+nav.scrolled{
 
+  height: 55px;
+  background-color: white;
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,.08);
+  position: sticky;
+  top:0;
+  border-bottom: 1px solid #BDB5AF;
+  z-index: 1;
+
+  .container{
+
+    border: none;
+
+    .sign-up{
+      background-color: $signupcolor;
+      color: white;
+    }
+  }
 }
